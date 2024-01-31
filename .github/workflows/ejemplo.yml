@@ -1,0 +1,12 @@
+name: ejemplo
+on:
+  push:
+    branches: [ main]
+jobs:
+  build:
+    runs_on: ubunto latest
+steps:
+  - uses: action/setup-python@v5
+    with:
+      python-version: '3.11'
+  - run: python ./EjemploAction.py
