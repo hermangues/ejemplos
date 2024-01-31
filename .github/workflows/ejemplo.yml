@@ -4,8 +4,8 @@ on:
     branches: [ main]
 jobs:
   runs_on:ubuntu-latest
-    steps:
-        - uses: action/setup-python@v5
+  steps:
+    - uses: action/setup-python@v5
         with:
           python-version: '3.11'
-        - run: python ./EjemploAction.py
+    - run: python ./EjemploAction.py
