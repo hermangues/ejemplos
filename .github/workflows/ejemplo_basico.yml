@@ -1,0 +1,12 @@
+name: ejemplo_basico
+on:
+  push:
+    branches:
+      -main
+jobs:
+  build:
+    runs-on: alpine-latest
+    steps:
+    - uses: actions/checkout@v5
+    - run: echo "Este es un ejemplo de un workflow generado con github actions"
+  
