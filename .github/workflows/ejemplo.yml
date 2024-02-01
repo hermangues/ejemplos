@@ -9,5 +9,5 @@ jobs:
     - uses: action/setup-python@v5
       with:
         python-version: '3.11'
-    - run: python ./EjemploAction.py
+    - run: python ./ejemplos/EjemploAction.py
     
